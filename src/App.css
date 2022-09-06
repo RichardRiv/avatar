@@ -12,6 +12,7 @@
 	width: 400px;
 	background-color: #292b2f;
 	border-radius: 2%;
+	flex: none;
 }
 
 .top-rectangle {
@@ -40,7 +41,8 @@
 .inner-circle {
 	height: 85px;
 	width: 85px;
-	background-color: red;
+	background-image: url('/src/img/Me8.png');
+	background-size: 85px;
 	border-radius: 50%;
 }
 
@@ -68,3 +70,26 @@
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+
+.socials {
+	color: white;
+}
+
+.socials-center {
+	margin: 0;
+	position: absolute;
+	top: 20%;
+	background-color: rgb(96, 175, 175);
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+/* .socials-center {
+	margin: 0;
+	position: absolute;
+	top: 63%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+} */
