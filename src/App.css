@@ -1,6 +1,28 @@
-html,
-body {
-	background-color: #36393f;
+.gradient-background {
+	background: linear-gradient(288deg, #e2e570, #70e5d4, #d970e5, #e5707f);
+	background-size: 240% 240%;
+	animation: gradient-animation 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: white;
 }
 
 /* ====== Entire Outer Rectangle ====== */
@@ -150,11 +172,84 @@ hr {
 }
 
 .about {
-	color: white;
+	color: #e4e7e8;
 	font-size: small;
 	position: absolute;
 	left: 5%;
 	top: 17%;
+	width: 90%;
+}
+
+/* ====== Education ====== */
+.education-title {
+	color: white;
+	font-weight: bold;
+	font-size: small;
+	position: absolute;
+	left: 5%;
+	top: 37%;
+	text-transform: uppercase;
+}
+
+.baruch {
+	color: white;
+	font-size: small;
+	position: absolute;
+	left: 5%;
+	top: 42%;
+	width: 90%;
+}
+
+.nycct {
+	color: white;
+	font-size: small;
+	position: absolute;
+	left: 5%;
+	top: 51%;
+	width: 90%;
+}
+
+span {
+	color: gray;
+	font-style: italic;
+}
+
+/* ====== Skills ====== */
+.skills-title {
+	color: white;
+	font-weight: bold;
+	font-size: small;
+	position: absolute;
+	left: 5%;
+	top: 61%;
+	text-transform: uppercase;
+}
+
+.skills-align {
+	margin: 0;
+	position: absolute;
+	top: 68%;
+	left: 5%;
+	display: flex;
+	/* justify-content: space-between; */
+	width: 85%;
+	flex-wrap: wrap;
+	gap: 2%;
+}
+
+.skills {
+	/* color: white;
+	font-size: small;
+	position: absolute;
+	left: 5%;
+	top: 46%; */
+
+	color: #d6d8db;
+	background-color: #292b2f;
+	padding: 2% 3% 2% 2%;
+	border-radius: 7%;
+	font-size: small;
+	margin: 5px 0px 0px 0px;
 }
 
 /* ====== Roles ====== */
