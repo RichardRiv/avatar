@@ -39,7 +39,7 @@ a:visited {
 	height: 700px;
 	width: 400px;
 	background-color: #292b2f;
-	border-radius: 2%;
+	border-radius: 10px;
 	flex: none;
 }
 
@@ -48,7 +48,7 @@ a:visited {
 	height: 80px;
 	width: 400px;
 	background-color: #e584c6;
-	border-radius: 2% 2% 0% 0%;
+	border-radius: 10px 10px 0px 0px;
 }
 
 .top-center {
@@ -108,19 +108,14 @@ a:visited {
 	color: white;
 	background-color: #17181a;
 	padding: 4%;
-	border-radius: 25%;
+	border-radius: 5px;
 
 	position: relative;
 	border: none;
 	transition: 0.4s ease-in;
 	z-index: 1;
 }
-/* .social:hover {
-	cursor: pointer;
-	background: #ff96ad;
-	box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad,
-	0 0 100px #ff96ad;
-} */
+
 .social:hover {
 	cursor: pointer;
 	background: #4fd7fb;
@@ -238,16 +233,10 @@ span {
 }
 
 .skills {
-	/* color: white;
-	font-size: small;
-	position: absolute;
-	left: 5%;
-	top: 46%; */
-
 	color: #d6d8db;
 	background-color: #292b2f;
 	padding: 2% 3% 2% 2%;
-	border-radius: 7%;
+	border-radius: 5px;
 	font-size: small;
 	margin: 5px 0px 0px 0px;
 }
@@ -267,9 +256,8 @@ span {
 	margin: 0;
 	position: absolute;
 	top: 82%;
-	left: 5%;
+	left: 3.3%;
 	display: flex;
-	justify-content: space-between;
 	width: 85%;
 	flex-wrap: wrap;
 }
@@ -278,7 +266,8 @@ span {
 	color: #d6d8db;
 	background-color: #292b2f;
 	padding: 2% 3% 2% 2%;
-	border-radius: 7%;
+	border-radius: 5px;
 	font-size: small;
-	margin: 5px 0px 0px 0px;
+	margin: 5px 0px 0px 6px;
+	height: 20px;
 }
