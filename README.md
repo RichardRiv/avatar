@@ -1,4 +1,4 @@
-[![MasterHead](./src/img/Banner.png)](https://avatar-nine-steel.vercel.app/)
+[![MasterHead](./src/img/Header.png)](https://avatar-nine-steel.vercel.app/)
 
 <h1 align="center">Welcome! 👋, I'm Richard</h1>
 <h3 align="center">Passionate for front and back-end development from NYC 🗽</h3>
