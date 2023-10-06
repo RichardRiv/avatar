@@ -2,11 +2,9 @@
 
 <h1 align="center">Welcome! 👋, I'm Richard</h1>
 <h3 align="center">Passionate for front and back-end development from NYC 🗽</h3>
-<img src="/src/img/Me8.png" align="right" alt="Me" width="400"/>
+<img src="/src/img/Me8.png" align="right" alt="Me" width="200" style="max-width: 100%; border-radius: 50%"/>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=richardriv&label=Profile%20views&color=0e75b6&style=flat" alt="richardriv" /> </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=richardriv" alt="richardriv" /></a> </p>
 
 - 👨‍💻 All of my projects are available at [https://github.com/RichardRiv](https://github.com/RichardRiv)
 
