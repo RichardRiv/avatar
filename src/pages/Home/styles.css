@@ -1,0 +1,432 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/* background: #222222; */
+	background: pink;
+	color: #eaebeb;
+}
+
+hr {
+	height: 1px;
+	border-width: 0;
+	/* background-color: #47484a; */
+	background-color: red;
+}
+
+/* .background {
+	width: 100vw;
+	height: 100vh;
+	background: #222222;
+	position: absolute;
+	color: white;
+	z-index: -1;
+} */
+
+.container {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+.outer-box {
+	width: 960px;
+	height: 810px;
+	background: #1a1a1e;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: row;
+	gap: 25px;
+}
+
+.col-1 {
+	background: #3d3e44;
+	flex: 0 0 40%;
+	margin: 50px 0px 15px 15px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.col-2 {
+	background: #3d3e44;
+	flex: 1;
+	margin: 50px 15px 15px 0px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.row-1 {
+	background: #76b1f6;
+	/* height: 40px; */
+	margin: 20px 0px 5px 0px;
+}
+
+.row-1-items {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding-bottom: 5px;
+}
+
+.row-2 {
+	background: #76b1f6;
+	/* flex: 1; */
+	height: 200px;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.row-2-items {
+	display: flex;
+	height: 100px;
+	justify-content: space-evenly;
+	margin-top: 20px;
+}
+
+.row-3 {
+	background: #76b1f6;
+	flex: 1;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.row-3-items {
+	display: flex;
+	height: 100px;
+	/* justify-content: space-evenly; */
+	/* margin-top: 20px; */
+}
+
+.banner {
+	background: #76b1f6;
+	height: 160px;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.profile-pic {
+	background-image: url('/src/assets/img/Me8.png');
+	position: absolute;
+	top: 85px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	background-size: cover;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 5px solid #3d3e44;
+	z-index: 10;
+}
+
+.profile {
+	background: #81571f;
+	flex: 1;
+	border-radius: 0px 0px 15px 15px;
+	padding: 85px 15px 0px 15px;
+}
+
+/* TODO: Investigate link color */
+a {
+	color: inherit;
+}
+
+.socials {
+}
+
+.social-items {
+	display: flex;
+	gap: 10px;
+	/* background-color: #17181a; */
+	/* padding: 4%; */
+	/* border-radius: 5px; */
+	/* border: none; */
+	/* transition: 0.4s ease-in; */
+}
+
+/* .social:hover {
+	cursor: pointer;
+	background: #4fd7fb;
+	box-shadow: 0 0 5px #4fd7fb, 0 0 25px #4fd7fb, 0 0 50px #4fd7fb,
+		0 0 100px #4fd7fb;
+} */
+
+/* OLD CODE */
+/* .gradient-background {
+	background: linear-gradient(288deg, #e2e570, #70e5d4, #d970e5, #e5707f);
+	background-size: 240% 240%;
+	animation: gradient-animation 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: white;
+} */
+
+/* ====== Entire Outer Rectangle ====== */
+/* .center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.outer-rectangle {
+	height: 700px;
+	width: 400px;
+	background-color: #292b2f;
+	border-radius: 10px;
+	flex: none;
+} */
+
+/* ====== Top Pink Rectangle ====== */
+/* .top-rectangle {
+	height: 80px;
+	width: 400px;
+	background-color: #e584c6;
+	border-radius: 10px 10px 0px 0px;
+} */
+
+/* .top-center {
+	margin: 0;
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+} */
+
+/* ====== Avatar ====== */
+/* .circle {
+	height: 100px;
+	width: 100px;
+	background-color: #292b2f;
+	border-radius: 50%;
+} */
+
+/* .inner-circle {
+	height: 85px;
+	width: 85px;
+	background-image: url('/src/img/Me8.png');
+	background-size: 85px;
+	border-radius: 50%;
+} */
+
+/* .circle-center {
+	margin: 0;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+} */
+
+/* ====== Inner Rectangle ====== */
+/* .inner-rectangle {
+	height: 470px;
+	width: 350px;
+	background-color: #17181a;
+	border-radius: 2%;
+}
+
+.inner-center {
+	margin: 0;
+	position: absolute;
+	top: 61%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+} */
+
+/* ====== Socials ====== */
+
+/* .social {
+	color: white;
+	background-color: #17181a;
+	padding: 4%;
+	border-radius: 5px;
+
+	position: relative;
+	border: none;
+	transition: 0.4s ease-in;
+	z-index: 1;
+}
+
+.social:hover {
+	cursor: pointer;
+	background: #4fd7fb;
+	box-shadow: 0 0 5px #4fd7fb, 0 0 25px #4fd7fb, 0 0 50px #4fd7fb,
+		0 0 100px #4fd7fb;
+}
+
+.socials-center {
+	margin: 0;
+	position: absolute;
+	top: 22%;
+	left: 50%;
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+} */
+
+/* ====== Name ====== */
+/* .name {
+	color: white;
+	font-weight: bold;
+	font-size: larger;
+	position: absolute;
+	left: 5%;
+} */
+
+/* ====== Horizontal Line ====== */
+/* hr {
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	width: 90%;
+	height: 1px;
+	border-width: 0;
+	background-color: #47484a;
+} */
+
+/* ====== About ====== */
+/* .about-title {
+	color: white;
+	font-weight: bold;
+	font-size: small;
+	position: absolute;
+	left: 5%;
+	top: 11%;
+	text-transform: uppercase;
+}
+
+.about {
+	color: #e4e7e8;
+	font-size: small;
+	position: absolute;
+	left: 5%;
+	top: 17%;
+	width: 90%;
+} */
+
+/* ====== Education ====== */
+/* .education-title {
+	color: white;
+	font-weight: bold;
+	font-size: small;
+	position: absolute;
+	left: 5%;
+	top: 37%;
+	text-transform: uppercase;
+}
+
+.baruch {
+	color: white;
+	font-size: small;
+	position: absolute;
+	left: 5%;
+	top: 42%;
+	width: 90%;
+}
+
+.nycct {
+	color: white;
+	font-size: small;
+	position: absolute;
+	left: 5%;
+	top: 51%;
+	width: 90%;
+}
+
+span {
+	color: gray;
+	font-style: italic;
+} */
+
+/* ====== Skills ====== */
+/* .skills-title {
+	color: white;
+	font-weight: bold;
+	font-size: small;
+	position: absolute;
+	left: 5%;
+	top: 61%;
+	text-transform: uppercase;
+}
+
+.skills-align {
+	margin: 0;
+	position: absolute;
+	top: 68%;
+	left: 5%;
+	display: flex;
+	width: 85%;
+	flex-wrap: wrap;
+	gap: 2%;
+}
+
+.skills {
+	color: #d6d8db;
+	background-color: #292b2f;
+	padding: 2% 3% 2% 2%;
+	border-radius: 5px;
+	font-size: small;
+	margin: 5px 0px 0px 0px;
+} */
+
+/* ====== Roles ====== */
+/* .roles-title {
+	color: white;
+	font-weight: bold;
+	font-size: small;
+	position: absolute;
+	left: 5%;
+	top: 75%;
+	text-transform: uppercase;
+}
+
+.roles-align {
+	margin: 0;
+	position: absolute;
+	top: 82%;
+	left: 3.3%;
+	display: flex;
+	width: 90%;
+	flex-wrap: wrap;
+}
+
+.role {
+	color: #d6d8db;
+	background-color: #292b2f;
+	padding: 2% 3% 2% 2%;
+	border-radius: 5px;
+	font-size: small;
+	margin: 5px 0px 0px 6px;
+	height: 20px;
+} */
