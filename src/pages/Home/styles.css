@@ -137,7 +137,24 @@ a {
 	color: inherit;
 }
 
-.socials {
+.social-container {
+	margin-top: 5px;
+}
+
+.social {
+	color: white;
+	background: #17181a;
+	padding: 1%;
+	border-radius: 5px;
+	border: none;
+	transition: 0.4s ease-in;
+}
+
+.social:hover {
+	cursor: pointer;
+	background: #4fd7fb;
+	box-shadow: 0 0 5px #4fd7fb, 0 0 25px #4fd7fb, 0 0 50px #4fd7fb,
+		0 0 100px #4fd7fb;
 }
 
 .social-items {
@@ -150,12 +167,6 @@ a {
 	/* transition: 0.4s ease-in; */
 }
 
-/* .social:hover {
-	cursor: pointer;
-	background: #4fd7fb;
-	box-shadow: 0 0 5px #4fd7fb, 0 0 25px #4fd7fb, 0 0 50px #4fd7fb,
-		0 0 100px #4fd7fb;
-} */
 
 /* OLD CODE */
 /* .gradient-background {

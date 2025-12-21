@@ -19,12 +19,18 @@ const Home = () => {
 						<div className="profile-pic"></div>
 						<div className="profile">
 							<h2>Richard Rivera</h2>
-							<div className="socials">
+							<div className="social-container">
 								<div className="social-items">
+									<div className="social">
+										<a href="mailto:rrivera1420@gmail.com" className="social">
+											<FontAwesomeIcon icon={faEnvelope} size="lg" />
+										</a>
+									</div>
 									<a
 										href="https://www.linkedin.com/in/richard-rivera-/"
 										target="_blank"
 										rel="noreferrer noopener"
+										className="social"
 									>
 										<FontAwesomeIcon icon={faLinkedinIn} size="lg" />
 									</a>
@@ -33,13 +39,9 @@ const Home = () => {
 											href="https://github.com/RichardRiv"
 											target="_blank"
 											rel="noreferrer noopener"
+											className="social"
 										>
 											<FontAwesomeIcon icon={faGithub} size="lg" />
-										</a>
-									</div>
-									<div className="social">
-										<a href="mailto:rrivera1420@gmail.com">
-											<FontAwesomeIcon icon={faEnvelope} size="lg" />
 										</a>
 									</div>
 								</div>
