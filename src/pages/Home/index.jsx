@@ -1,6 +1,7 @@
 import ReactLogo from '../../assets/logos/react-svgrepo-com.svg';
 import DotNetLogo from '../../assets/logos/dotnet-svgrepo-com.svg';
-import MSSQLLogo from '../../assets/logos/msql-server-svgrepo-com.svg';
+// import MSSQLLogo from '../../assets/logos/msql-server-svgrepo-com.svg';
+import { ReactComponent as MSSQLLogo } from '../../assets/logos/msql-server-svgrepo-com.svg';
 // import TSLogo from '../../assets/logos/typescript-logo-svgrepo-com.svg';
 import './styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -19,31 +20,70 @@ const Home = () => {
 						<div className="profile-pic"></div>
 						<div className="profile">
 							<h2>Richard Rivera</h2>
+							{/* SOCIALS */}
 							<div className="social-container">
 								<div className="social-items">
 									<div className="social">
-										<a href="mailto:rrivera1420@gmail.com" className="social">
+										<a href="mailto:rrivera1420@gmail.com">
 											<FontAwesomeIcon icon={faEnvelope} size="lg" />
 										</a>
+										&nbsp; Email
 									</div>
-									<a
-										href="https://www.linkedin.com/in/richard-rivera-/"
-										target="_blank"
-										rel="noreferrer noopener"
-										className="social"
-									>
-										<FontAwesomeIcon icon={faLinkedinIn} size="lg" />
-									</a>
+									<div className="social">
+										<a
+											href="https://www.linkedin.com/in/richard-rivera-/"
+											target="_blank"
+											rel="noreferrer noopener"
+										>
+											<FontAwesomeIcon icon={faLinkedinIn} size="lg" />
+										</a>
+									</div>
 									<div className="social">
 										<a
 											href="https://github.com/RichardRiv"
 											target="_blank"
 											rel="noreferrer noopener"
-											className="social"
 										>
 											<FontAwesomeIcon icon={faGithub} size="lg" />
 										</a>
 									</div>
+								</div>
+							</div>
+
+							{/* MINI BIO */}
+							<div className="mini-bio">
+								<p>
+									Welcome to my profile! I hope you take a look around and enjoy
+									your stay. Lorem ipsum dolor sit amet, consectetur adipisicing
+									elit. Eaque error, architecto dolores, exercitationem
+									quibusdam repellendus neque quasi tenetur harum velit possimus
+									adipisci illo eos est beatae odit quae laudantium temporibus?
+								</p>
+							</div>
+
+							{/* EDUCATION */}
+							<div className="educations">
+								<h5>Education</h5>
+								<p className="education">
+									Baruch College Zicklin School of Business
+								</p>
+								<span className="education-span">Received: June 2024</span>
+								<p className="education">
+									New York City College of Technology (City Tech)
+								</p>
+								<span className="education-span">Received: June 2022</span>
+							</div>
+
+							{/* EXPERIENCE */}
+							<div className="experiences">
+								<h5>Experiences</h5>
+								<div className="experiences-align">
+									<span className="experience">🔵 Software Engineer</span>
+									<span className="experience">🔵 Teacher Assistant</span>
+									<span className="experience">🔵 Full Stack Developer</span>
+									<span className="experience">🔵 Game Developer</span>
+									<span className="experience">🔵 WordPress Developer</span>
+									<span className="experience">🔵 CST Tutor</span>
 								</div>
 							</div>
 						</div>
@@ -51,6 +91,7 @@ const Home = () => {
 
 					{/* COLUMN 2 */}
 					<div className="col-2">
+						{/* NAVBAR */}
 						<div className="row-1">
 							<div className="row-1-items">
 								<p>Board</p>
@@ -59,19 +100,162 @@ const Home = () => {
 							</div>
 							<hr />
 						</div>
+
+						{/* FAVORITE STACK */}
 						<div className="row-2">
 							<h4>Favorite Stack</h4>
 							<div className="row-2-items">
 								<img src={ReactLogo} alt="React Logo" />
 								<img src={DotNetLogo} alt=".NET Logo" />
-								<img src={MSSQLLogo} alt="Microsoft SQL Server Logo" />
+								{/* <img src={MSSQLLogo} alt="Microsoft SQL Server Logo" /> */}
+								<MSSQLLogo className="sql-logo" />
 							</div>
 						</div>
+
+						{/* TECHNOLOGIES USED */}
 						<div className="row-3">
-							<h4>Languages Used</h4>
+							<h4>Technologies Used</h4>
 							<div className="row-3-items">
-								{/* TODO: Add Languages Logos */}
 								{/* <img src={TSLogo} alt="TypeScript Logo" /> */}
+								{/* [vscode](https://cdn.svgporn.com/logos/visual-studio-code.svg) */}
+								<img
+									src="https://cdn.svgporn.com/logos/html-5.svg"
+									alt=""
+									// style={{ width: '25px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/css-3.svg"
+									alt=""
+									// style={{ width: '25px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/javascript.svg"
+									alt=""
+									// style={{ width: '30px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/typescript-icon.svg"
+									alt=""
+									// style={{ width: '30px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/git-icon.svg"
+									alt=""
+									// style={{ width: '30px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/java.svg"
+									alt=""
+									// style={{ width: '30px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/c-sharp.svg"
+									alt=""
+									// style={{ width: '30px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/c-plusplus.svg"
+									alt=""
+									// style={{ width: '30px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/python.svg"
+									alt=""
+									// style={{ width: '30px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/react.svg"
+									alt=""
+									// style={{ width: '30px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/sass.svg"
+									alt=""
+									// style={{ width: '35px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/tailwindcss-icon.svg"
+									alt=""
+									// style={{ width: '35px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/spring-icon.svg"
+									alt=""
+									// style={{ width: '30px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/jquery.svg"
+									alt=""
+									// style={{ width: '100px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/firebase.svg"
+									alt=""
+									// style={{ width: '30px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/mongodb-icon.svg"
+									alt=""
+									// style={{ width: '20px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/wordpress-icon-alt.svg"
+									alt=""
+									// style={{ width: '30px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/visual-studio-code.svg"
+									alt=""
+									// style={{ width: '30px' }}
+									className="row-3-item"
+								/>
+
+								<img
+									src="https://cdn.svgporn.com/logos/visual-studio.svg"
+									alt=""
+									// style={{ width: '30px' }}
+									className="row-3-item"
+								/>
+								<img
+									src="https://cdn.svgporn.com/logos/intellij-idea.svg"
+									alt=""
+									// style={{ width: '30px' }}
+									className="row-3-item"
+								/>
 							</div>
 						</div>
 					</div>

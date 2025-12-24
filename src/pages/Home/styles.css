@@ -13,8 +13,8 @@ body {
 hr {
 	height: 1px;
 	border-width: 0;
-	/* background-color: #47484a; */
-	background-color: red;
+	background-color: #47484a;
+	/* background-color: red; */
 }
 
 /* .background {
@@ -45,7 +45,7 @@ hr {
 }
 
 .col-1 {
-	background: #3d3e44;
+	background: #1a1a1e;
 	flex: 0 0 40%;
 	margin: 50px 0px 15px 15px;
 	display: flex;
@@ -54,7 +54,7 @@ hr {
 }
 
 .col-2 {
-	background: #3d3e44;
+	background: #1a1a1e;
 	flex: 1;
 	margin: 50px 15px 15px 0px;
 	display: flex;
@@ -63,7 +63,7 @@ hr {
 }
 
 .row-1 {
-	background: #76b1f6;
+	background: #1a1a1e;
 	/* height: 40px; */
 	margin: 20px 0px 5px 0px;
 }
@@ -76,7 +76,7 @@ hr {
 }
 
 .row-2 {
-	background: #76b1f6;
+	background: #2c2d32;
 	/* flex: 1; */
 	height: 200px;
 	padding: 10px;
@@ -90,18 +90,38 @@ hr {
 	margin-top: 20px;
 }
 
+.sql-logo {
+	width: 100px;
+	height: 100px;
+}
+
+.sql-logo path {
+	/* fill: rgb(143, 143, 143); */
+	fill: rgb(153, 153, 153);
+}
+
 .row-3 {
-	background: #76b1f6;
+	background: #2c2d32;
 	flex: 1;
 	padding: 10px;
 	border-radius: 15px;
 }
 
+/* TODO: MAKE CARDS INSTEAD BECAUSE IT LOOKS BETTER */
 .row-3-items {
+	margin-top: 20px;
 	display: flex;
-	height: 100px;
+	gap: 25px;
+	/* justify-content: space-evenly; */
+	justify-content: center;
+	flex-wrap: wrap;
+	/* height: 100px; */
 	/* justify-content: space-evenly; */
 	/* margin-top: 20px; */
+}
+
+.row-3-item {
+	height: 50px;
 }
 
 .banner {
@@ -126,13 +146,12 @@ hr {
 }
 
 .profile {
-	background: #81571f;
+	background: #242429;
 	flex: 1;
 	border-radius: 0px 0px 15px 15px;
 	padding: 85px 15px 0px 15px;
 }
 
-/* TODO: Investigate link color */
 a {
 	color: inherit;
 }
@@ -144,7 +163,7 @@ a {
 .social {
 	color: white;
 	background: #17181a;
-	padding: 1%;
+	padding: 1% 2%;
 	border-radius: 5px;
 	border: none;
 	transition: 0.4s ease-in;
@@ -159,7 +178,7 @@ a {
 
 .social-items {
 	display: flex;
-	gap: 10px;
+	gap: 7px;
 	/* background-color: #17181a; */
 	/* padding: 4%; */
 	/* border-radius: 5px; */
@@ -167,6 +186,43 @@ a {
 	/* transition: 0.4s ease-in; */
 }
 
+.mini-bio {
+	margin-top: 15px;
+}
+
+.educations {
+	margin-top: 15px;
+}
+
+.education {
+	font-size: small;
+}
+
+.education-span {
+	font-size: small;
+	color: gray;
+	font-style: italic;
+}
+
+.experiences {
+	margin-top: 15px;
+}
+
+.experiences-align {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	margin-top: 5px;
+}
+
+.experience {
+	color: #d6d8db;
+	background-color: #292b2f;
+	/* padding: 1% 2%; */
+	padding: 5px 7px;
+	border-radius: 5px;
+	font-size: small;
+}
 
 /* OLD CODE */
 /* .gradient-background {
