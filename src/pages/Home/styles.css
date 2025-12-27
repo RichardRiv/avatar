@@ -5,7 +5,6 @@
 }
 
 body {
-	/* background: #222222; */
 	background: pink;
 	color: #eaebeb;
 }
@@ -14,17 +13,11 @@ hr {
 	height: 1px;
 	border-width: 0;
 	background-color: #47484a;
-	/* background-color: red; */
 }
 
-/* .background {
-	width: 100vw;
-	height: 100vh;
-	background: #222222;
-	position: absolute;
-	color: white;
-	z-index: -1;
-} */
+a {
+	color: inherit;
+}
 
 .container {
 	min-height: 100vh;
@@ -64,7 +57,6 @@ hr {
 
 .row-1 {
 	background: #1a1a1e;
-	/* height: 40px; */
 	margin: 20px 0px 5px 0px;
 }
 
@@ -73,6 +65,18 @@ hr {
 	align-items: center;
 	gap: 20px;
 	padding-bottom: 5px;
+	font-weight: 600;
+	font-size: 14px;
+	color: rgb(148, 148, 148);
+}
+
+.row-1-item {
+	cursor: pointer;
+}
+
+/* TODO: White Underline */
+.active {
+	color: #ffffff;
 }
 
 .row-2 {
@@ -90,14 +94,22 @@ hr {
 	margin-top: 20px;
 }
 
+.react-logo {
+	width: 80px;
+	height: 80px;
+}
+.net-logo {
+	width: 80px;
+	height: 80px;
+}
 .sql-logo {
 	width: 100px;
 	height: 100px;
 }
 
 .sql-logo path {
-	/* fill: rgb(143, 143, 143); */
-	fill: rgb(153, 153, 153);
+	/* fill: rgb(153, 153, 153); */
+	fill: white;
 }
 
 .row-3 {
@@ -107,21 +119,54 @@ hr {
 	border-radius: 15px;
 }
 
-/* TODO: MAKE CARDS INSTEAD BECAUSE IT LOOKS BETTER */
 .row-3-items {
-	margin-top: 20px;
+	margin-top: 10px;
 	display: flex;
-	gap: 25px;
-	/* justify-content: space-evenly; */
-	justify-content: center;
+	gap: 20px;
+	/* justify-content: center; */
 	flex-wrap: wrap;
-	/* height: 100px; */
-	/* justify-content: space-evenly; */
-	/* margin-top: 20px; */
+	height: 320px;
+	padding: 15px;
+}
+
+.row-3-items::-webkit-scrollbar {
+	width: 0px;
+}
+
+.row-3-items::-webkit-scrollbar-thumb {
+	background: transparent;
+}
+
+.row-3-items::-webkit-scrollbar {
+	/* .row-3-items.scrollbar-visible::-webkit-scrollbar { */
+	width: 4px;
+}
+
+.row-3-items::-webkit-scrollbar-thumb {
+	background: #5f606a;
+	-webkit-border-radius: 10px;
+}
+
+.expand {
+	overflow-y: scroll;
+	height: 400px !important;
 }
 
 .row-3-item {
 	height: 50px;
+}
+
+.row-3-items-see-more {
+	border: none;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+	color: rgb(175, 175, 175);
+}
+
+.row-3-items-see-more:hover {
+	color: white;
+	text-decoration: underline;
 }
 
 .banner {
@@ -141,7 +186,7 @@ hr {
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
-	border: 5px solid #3d3e44;
+	border: 5px solid #242429;
 	z-index: 10;
 }
 
@@ -150,10 +195,6 @@ hr {
 	flex: 1;
 	border-radius: 0px 0px 15px 15px;
 	padding: 85px 15px 0px 15px;
-}
-
-a {
-	color: inherit;
 }
 
 .social-container {
