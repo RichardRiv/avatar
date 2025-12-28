@@ -22,19 +22,18 @@ import { ReactComponent as VsLogo } from '../../assets/logos/visual-studio.svg';
 import { ReactComponent as IntellijLogo } from '../../assets/logos/intellij-idea.svg';
 
 import './styles.css';
+import { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Card from '../../components/Card';
-import { useState, useRef } from 'react';
+import ActivityTab from '../Activity/index';
 
 const Home = () => {
 	const [btnClicked, setBtnClicked] = useState(false);
 	const [activeTab, setActiveTab] = useState('Board');
-	// const [isFocused, setIsFocused] = useState(false);
 
 	const btnRef = useRef(null);
-	// const containerRef = useRef(null);
 
 	const handleBtnClick = () => {
 		setBtnClicked(!btnClicked);
@@ -151,105 +150,104 @@ const Home = () => {
 									Wishlist
 								</span>
 							</div>
-							<hr />
+							{/* <hr /> */}
 						</div>
 
-						{/* FAVORITE STACK */}
-						<div className="row-2">
-							<h4>Favorite Stack</h4>
-							<div className="row-2-items">
-								<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-									<ReactLogo className="react-logo" />
-								</Card>
-								<Card gradient="linear-gradient(135deg, #512bd4 0%, #7b3ff2 100%)">
-									<DotNetLogo className="net-logo" />
-								</Card>
-								<Card gradient="linear-gradient(135deg, #CC2927 0%, #E74C3C 100%)">
-									<MSSQLLogo className="sql-logo" />
-								</Card>
-							</div>
-						</div>
-
-						{/* TECHNOLOGIES USED */}
-						<div
-							className="row-3"
-							// className={`row-3 ${isFocused ? 'scrollbar-visible' : ''}`}
-							// ref={containerRef}
-							// onFocus={() => setIsFocused(true)}
-							// onBlur={() => setIsFocused(false)}
-						>
-							<h4>Technologies Used</h4>
-							<div className={`row-3-items ${btnClicked ? 'expand' : ''}`}>
-								<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-									<HtmlLogo className="react-logo" />
-								</Card>
-								<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-									<CssLogo className="net-logo" />
-								</Card>
-								<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-									<JavaScriptLogo className="react-logo" />
-								</Card>
-								<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-									<TypeScriptLogo className="react-logo" />
-								</Card>
-								<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-									<GitLogo className="net-logo" />
-								</Card>
-								<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-									<JavaLogo className="react-logo" />
-								</Card>
-								<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-									<CSharpLogo className="react-logo" />
-								</Card>
-								<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-									<CPlusPlusLogo className="net-logo" />
-								</Card>
-								{btnClicked && (
-									<>
+						{activeTab === 'Activity' ? (
+							<ActivityTab />
+						) : (
+							/* FAVORITE STACK */
+							<>
+								<div className="row-2">
+									<h4>Favorite Stack</h4>
+									<div className="row-2-items">
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<PythonLogo className="react-logo" />
+											<ReactLogo className="react-logo" />
+										</Card>
+										<Card gradient="linear-gradient(135deg, #512bd4 0%, #7b3ff2 100%)">
+											<DotNetLogo className="net-logo" />
+										</Card>
+										<Card gradient="linear-gradient(135deg, #CC2927 0%, #E74C3C 100%)">
+											<MSSQLLogo className="sql-logo" />
+										</Card>
+									</div>
+								</div>
+								{/* TECHNOLOGIES USED */}
+								<div className="row-3">
+									<h4>Technologies Used</h4>
+									<div className={`row-3-items ${btnClicked ? 'expand' : ''}`}>
+										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+											<HtmlLogo className="react-logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<SassLogo className="react-logo" />
+											<CssLogo className="net-logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<TailwindLogo className="net-logo" />
+											<JavaScriptLogo className="react-logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<SpringLogo className="react-logo" />
+											<TypeScriptLogo className="react-logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<JQueryLogo className="react-logo" />
+											<GitLogo className="net-logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<FirebaseLogo className="net-logo" />
+											<JavaLogo className="react-logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<MongodbLogo className="react-logo" />
+											<CSharpLogo className="react-logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<WordpressLogo className="react-logo" />
+											<CPlusPlusLogo className="net-logo" />
 										</Card>
-										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<VscodeLogo className="net-logo" />
-										</Card>
-										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<VsLogo className="react-logo" />
-										</Card>
-										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<IntellijLogo className="react-logo" />
-										</Card>
-									</>
-								)}
-							</div>
-							<button
-								ref={btnRef}
-								className="row-3-items-see-more"
-								onClick={handleBtnClick}
-							>
-								See more!
-							</button>
-						</div>
+										{btnClicked && (
+											<>
+												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+													<PythonLogo className="react-logo" />
+												</Card>
+												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+													<SassLogo className="react-logo" />
+												</Card>
+												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+													<TailwindLogo className="net-logo" />
+												</Card>
+												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+													<SpringLogo className="react-logo" />
+												</Card>
+												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+													<JQueryLogo className="react-logo" />
+												</Card>
+												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+													<FirebaseLogo className="net-logo" />
+												</Card>
+												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+													<MongodbLogo className="react-logo" />
+												</Card>
+												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+													<WordpressLogo className="react-logo" />
+												</Card>
+												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+													<VscodeLogo className="net-logo" />
+												</Card>
+												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+													<VsLogo className="react-logo" />
+												</Card>
+												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+													<IntellijLogo className="react-logo" />
+												</Card>
+											</>
+										)}
+									</div>
+									<button
+										ref={btnRef}
+										className="row-3-items-see-more"
+										onClick={handleBtnClick}
+									>
+										See more!
+									</button>
+								</div>{' '}
+							</>
+						)}
 					</div>
 				</div>
 			</div>
