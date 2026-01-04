@@ -162,7 +162,7 @@ const Home = () => {
 									<h4>Favorite Stack</h4>
 									<div className="row-2-items">
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<ReactLogo className="react-logo" />
+											<ReactLogo className="logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #512bd4 0%, #7b3ff2 100%)">
 											<DotNetLogo className="net-logo" />
@@ -177,63 +177,63 @@ const Home = () => {
 									<h4>Technologies Used</h4>
 									<div className={`row-3-items ${btnClicked ? 'expand' : ''}`}>
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<HtmlLogo className="react-logo" />
+											<HtmlLogo className="logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<CssLogo className="net-logo" />
+											<CssLogo className="logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<JavaScriptLogo className="react-logo" />
+											<JavaScriptLogo className="logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<TypeScriptLogo className="react-logo" />
+											<TypeScriptLogo className="logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<GitLogo className="net-logo" />
+											<GitLogo className="logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<JavaLogo className="react-logo" />
+											<JavaLogo className="logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<CSharpLogo className="react-logo" />
+											<CSharpLogo className="logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-											<CPlusPlusLogo className="net-logo" />
+											<CPlusPlusLogo className="logo" />
 										</Card>
 										{btnClicked && (
 											<>
 												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-													<PythonLogo className="react-logo" />
+													<PythonLogo className="logo" />
 												</Card>
 												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-													<SassLogo className="react-logo" />
+													<SassLogo className="logo" />
 												</Card>
 												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-													<TailwindLogo className="net-logo" />
+													<TailwindLogo className="logo" />
 												</Card>
 												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-													<SpringLogo className="react-logo" />
+													<SpringLogo className="logo" />
 												</Card>
 												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-													<JQueryLogo className="react-logo" />
+													<JQueryLogo className="logo" />
 												</Card>
 												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-													<FirebaseLogo className="net-logo" />
+													<FirebaseLogo className="logo" />
 												</Card>
 												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-													<MongodbLogo className="react-logo" />
+													<MongodbLogo className="logo" />
 												</Card>
 												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-													<WordpressLogo className="react-logo" />
+													<WordpressLogo className="logo" />
 												</Card>
 												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-													<VscodeLogo className="net-logo" />
+													<VscodeLogo className="logo" />
 												</Card>
 												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-													<VsLogo className="react-logo" />
+													<VsLogo className="logo" />
 												</Card>
 												<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
-													<IntellijLogo className="react-logo" />
+													<IntellijLogo className="logo" />
 												</Card>
 											</>
 										)}
@@ -245,7 +245,7 @@ const Home = () => {
 									>
 										See more!
 									</button>
-								</div>{' '}
+								</div>
 							</>
 						)}
 					</div>
