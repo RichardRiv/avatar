@@ -1,0 +1,58 @@
+.activity-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.activity-item {
+	background: #2c2d32;
+	/* flex: 1; */
+	height: 150px;
+	padding: 10px;
+	border-radius: 15px;
+	/* display: flex;
+	flex-direction: column;
+	gap: 7px; */
+}
+
+.span-container {
+	display: flex;
+	justify-content: space-between;
+	/* align-items: center; */
+}
+
+.span-group {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+
+.three-dots {
+	font-size: 12px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.spotify-logo {
+	width: 10px;
+	height: 10px;
+}
+
+.spotify-container {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+	height: 100px;
+	align-items: center;
+}
+
+.spotify-art {
+	height: 100%;
+	border-radius: 10px;
+}
+
+.spotify-info {
+	display: flex;
+	flex-direction: column;
+}

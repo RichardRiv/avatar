@@ -165,7 +165,7 @@ const Home = () => {
 											<ReactLogo className="logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #512bd4 0%, #7b3ff2 100%)">
-											<DotNetLogo className="net-logo" />
+											<DotNetLogo className="logo" />
 										</Card>
 										<Card gradient="linear-gradient(135deg, #CC2927 0%, #E74C3C 100%)">
 											<MSSQLLogo className="sql-logo" />
