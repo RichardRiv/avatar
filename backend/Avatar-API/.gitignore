@@ -1,0 +1,46 @@
+# Builds
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+[Bb]uild/
+out/
+
+# Nuget Packages
+/packages/
+*.nupkg
+*.snupkg
+
+# User-Specific Files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Rider
+.idea/
+*.sln.iml
+riderModule.iml
+/_ReSharper.Caches/
+.idea_modules/
+
+# Visual Studio
+.vs/
+*.vspscc
+*.vssscc
+*.vscode/
+
+# CRITICAL: Secrets Protection
+appsettings.Development.json
+appsettings.*.json
+!appsettings.json
+secrets.json
+*.secret
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

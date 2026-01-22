@@ -1,17 +1,17 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
+# Frontend dependencies
 /node_modules
 /.pnp
 .pnp.js
 
-# testing
+# Testing
 /coverage
 
-# production
+# Production
 /build
 
-# misc
+# Misc
 .DS_Store
 .env.local
 .env.development.local
@@ -21,3 +21,46 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Backend specifics
+# Build
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+[Bb]uild/
+out/
+
+# NuGet Packages
+packages/
+*.nupkg
+*.snupkg
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Rider
+.idea/
+*.sln.iml
+riderModule.iml
+/_ReSharper.Caches/
+.idea_modules/
+
+# Visual Studio
+.vs/
+*.vspscc
+*.vssscc
+
+# CRITICAL: Secrets Protection
+appsettings.Development.json
+appsettings.*.json
+!appsettings.json
+secrets.json
+*.secret
+
+# Logs
+*.log
+logs/
