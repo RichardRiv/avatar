@@ -4,6 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container
 builder.Services.AddControllers();
+builder.Services.AddHttpClient<GitHubService>();
 
 // Registers Spotify Service as a singleton
 builder.Services.AddSingleton<SpotifyService>();
@@ -11,7 +12,11 @@ builder.Services.AddSingleton<SpotifyService>();
 // Add CORS for React frontend
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowReact", policy => policy.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader().AllowCredentials());
+    options.AddPolicy("AllowReact", policy => 
+        policy.WithOrigins("http://localhost:3000", "https://avatar-nine-steel.vercel.app")
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials());
 });
 
 var app = builder.Build();
@@ -20,9 +25,6 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
 }
-
-// HTTP Requests to HTTPS
-app.UseHttpsRedirection();
 
 // Enables CORS, Auth's & Controllers/Routes
 app.UseCors("AllowReact");

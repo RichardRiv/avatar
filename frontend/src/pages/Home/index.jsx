@@ -42,7 +42,6 @@ const Home = () => {
 
 	return (
 		<>
-			{/* <div className="background"></div> */}
 			<div className="container">
 				<div className="outer-box">
 					{/* COLUMN 1 */}
@@ -84,11 +83,10 @@ const Home = () => {
 							{/* MINI BIO */}
 							<div className="mini-bio">
 								<p>
-									Welcome to my profile! I hope you take a look around and enjoy
-									your stay. Lorem ipsum dolor sit amet, consectetur adipisicing
-									elit. Eaque error, architecto dolores, exercitationem
-									quibusdam repellendus neque quasi tenetur harum velit possimus
-									adipisci illo eos est beatae odit quae laudantium temporibus?
+									Hi! Welcome to my profile inspired by Discord! Here you get
+									the chance to know me a little bit. Play around and you'll see
+									what skills I possess and what I am currently up to! Hope you
+									enjoy your stay =)
 								</p>
 							</div>
 
@@ -141,16 +139,15 @@ const Home = () => {
 								>
 									Activity
 								</span>
-								<span
+								{/* <span
 									className={`row-1-item ${
 										activeTab === 'Wishlist' ? 'active' : ''
 									}`}
 									onClick={() => setActiveTab('Wishlist')}
 								>
 									Wishlist
-								</span>
+								</span> */}
 							</div>
-							{/* <hr /> */}
 						</div>
 
 						{activeTab === 'Activity' ? (

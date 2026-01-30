@@ -1,0 +1,87 @@
+.spotify-item {
+	background: #2c2d32;
+	height: 150px;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.span-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.span-group {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+
+.three-dots {
+	font-size: 12px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.spotify-logo {
+	width: 10px;
+	height: 10px;
+}
+
+.spotify-container {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+	height: 100px;
+	align-items: center;
+}
+
+.spotify-art {
+	height: 100%;
+	border-radius: 10px;
+}
+
+.spotify-info {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.spotify-artist {
+	font-size: small;
+	color: #d7d5da;
+}
+
+.progress-bar-container {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	width: 100%;
+	margin-top: 8px;
+}
+
+.progress-time {
+	font-size: small;
+	/* color: #b3b3b3; */
+}
+
+.progress-bar-wrapper {
+	flex: 1;
+}
+
+.progress-bar-bg {
+	height: 4px;
+	background-color: #404040;
+	border-radius: 2px;
+}
+
+.progress-bar-fill {
+	height: 100%;
+	background-color: #1db954;
+	border-radius: 2px;
+	transition: width 0.3s ease;
+}
+
+.progress-bar-bg:hover .progress-bar-fill {
+	background-color: #1ed760;
+}
