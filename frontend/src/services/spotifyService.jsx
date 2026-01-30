@@ -1,4 +1,5 @@
-const BASE_URL = 'http://127.0.0.1:7044/api/spotify';
+const BASE_URL =
+	process.env.REACT_APP_API_URL || 'http://127.0.0.1:7044/api/spotify';
 
 export const spotifyService = {
 	async getCurrentlyPlaying() {
