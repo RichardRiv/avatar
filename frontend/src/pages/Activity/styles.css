@@ -4,9 +4,12 @@
 	gap: 10px;
 }
 
-/* .activity-item {
-	background: #2c2d32;
-	height: 150px;
-	padding: 10px;
-	border-radius: 15px;
-} */
+.activity-container:empty {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	.activity-h5 {
+		display: none;
+	}
+}

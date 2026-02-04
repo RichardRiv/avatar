@@ -40,6 +40,13 @@ const Home = () => {
 		btnRef.current.remove();
 	};
 
+	const handleTabClicked = (tab) => {
+		setActiveTab(tab);
+		if (tab !== 'Board') setBtnClicked(false);
+	};
+
+	// if (activeTab !== 'Board') setBtnClicked(false);
+
 	return (
 		<>
 			<div className="container">
@@ -81,45 +88,143 @@ const Home = () => {
 							</div>
 
 							{/* MINI BIO */}
-							<div className="mini-bio">
-								<p>
-									Hi! Welcome to my profile inspired by Discord! Here you get
-									the chance to know me a little bit. Play around and you'll see
-									what skills I possess and what I am currently up to! Hope you
-									enjoy your stay =)
-								</p>
-							</div>
-
-							{/* EDUCATION */}
-							<div className="educations">
-								<h5>Education</h5>
-								<p className="education">
-									Baruch College Zicklin School of Business
-								</p>
-								<span className="education-span">Received: June 2024</span>
-								<p className="education">
-									New York City College of Technology (City Tech)
-								</p>
-								<span className="education-span">Received: June 2022</span>
-							</div>
-
-							{/* EXPERIENCE */}
-							<div className="experiences">
-								<h5>Experiences</h5>
-								<div className="experiences-align">
-									<span className="experience">🔵 Software Engineer</span>
-									<span className="experience">🔵 Teacher Assistant</span>
-									<span className="experience">🔵 Full Stack Developer</span>
-									<span className="experience">🔵 Game Developer</span>
-									<span className="experience">🔵 WordPress Developer</span>
-									<span className="experience">🔵 CST Tutor</span>
+							<div className="about-me">
+								<div className="mini-bio">
+									<p>
+										Hi there! Glad to have you here! Here you get the chance to
+										know me a little bit. Play around and you'll see what skills
+										I possess and what I am currently up to! Hope you enjoy your
+										stay =)
+									</p>
 								</div>
+
+								{/* EDUCATION */}
+								<div className="educations">
+									<h5>Education</h5>
+									<p className="education">
+										Baruch College Zicklin School of Business
+									</p>
+									<span className="education-span">Received: June 2024</span>
+									<p className="education">
+										New York City College of Technology (City Tech)
+									</p>
+									<span className="education-span">Received: June 2022</span>
+								</div>
+
+								{/* EXPERIENCE */}
+								<div className="experiences">
+									<h5>Experiences</h5>
+									<div className="experiences-align">
+										<span className="experience">🔵 Software Engineer</span>
+										<span className="experience">🔵 Teacher Assistant</span>
+										<span className="experience">🔵 Full Stack Developer</span>
+										<span className="experience">🔵 Game Developer</span>
+										<span className="experience">🔵 WordPress Developer</span>
+										<span className="experience">🔵 CST Tutor</span>
+									</div>
+								</div>
+
+								{/* ALWAYS DISPLAY FOR SCREENS < 1000px & HIDE FROM SCREENS > 1000px*/}
+								<div className="mobile-content desktop-hide">
+									<ActivityTab />
+									<div className="row-2">
+										<h4>Favorite Stack</h4>
+										<div className="row-2-items">
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<ReactLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #512bd4 0%, #7b3ff2 100%)">
+												<DotNetLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #CC2927 0%, #E74C3C 100%)">
+												<MSSQLLogo className="sql-logo" />
+											</Card>
+										</div>
+									</div>
+
+									<div className="row-3">
+										<h4>Technologies Used</h4>
+										<div
+											className={`row-3-items ${btnClicked ? 'expand' : ''}`}
+										>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<HtmlLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<CssLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<JavaScriptLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<TypeScriptLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<GitLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<JavaLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<CSharpLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<CPlusPlusLogo className="logo" />
+											</Card>
+											{/* {btnClicked && (
+											<> */}
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<PythonLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<SassLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<TailwindLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<SpringLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<JQueryLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<FirebaseLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<MongodbLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<WordpressLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<VscodeLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<VsLogo className="logo" />
+											</Card>
+											<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
+												<IntellijLogo className="logo" />
+											</Card>
+											{/* </>
+										)} */}
+										</div>
+										{/* <button
+										ref={btnRef}
+										className="row-3-items-see-more"
+										onClick={handleBtnClick}
+									>
+										See more!
+									</button> */}
+									</div>
+								</div>
+								{/* MOBILE CONTENT TO ALWAYS DISPLAY */}
 							</div>
 						</div>
 					</div>
 
 					{/* COLUMN 2 */}
-					<div className="col-2">
+					<div className="col-2 mobile-hide">
 						{/* NAVBAR */}
 						<div className="row-1">
 							<div className="row-1-items">
@@ -127,7 +232,7 @@ const Home = () => {
 									className={`row-1-item ${
 										activeTab === 'Board' ? 'active' : ''
 									}`}
-									onClick={() => setActiveTab('Board')}
+									onClick={() => handleTabClicked('Board')}
 								>
 									Board
 								</span>
@@ -135,7 +240,7 @@ const Home = () => {
 									className={`row-1-item ${
 										activeTab === 'Activity' ? 'active' : ''
 									}`}
-									onClick={() => setActiveTab('Activity')}
+									onClick={() => handleTabClicked('Activity')}
 								>
 									Activity
 								</span>
@@ -170,7 +275,7 @@ const Home = () => {
 									</div>
 								</div>
 								{/* TECHNOLOGIES USED */}
-								<div className="row-3">
+								<div className="row-3 mobile-hide">
 									<h4>Technologies Used</h4>
 									<div className={`row-3-items ${btnClicked ? 'expand' : ''}`}>
 										<Card gradient="linear-gradient(135deg, #20232a 0%, #282c34 100%)">
@@ -253,77 +358,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// ======= OLD CODE =======
-// <div className="gradient-background">
-// 	<div className="outer-rectangle center">
-// 		<div className="top-rectangle top-center"></div>
-// 		{/* == Profile Pic == */}
-// 		<div className="circle circle-center"></div>
-// 		<div className="inner-circle circle-center"></div>
-// 		{/* == Socials == */}
-// 		<div className="socials-center">
-// 			<div className="social">
-// 				<a
-// 					href="https://www.linkedin.com/in/richard-rivera-/"
-// 					target="_blank"
-// 					rel="noreferrer noopener"
-// 				>
-// 					<FontAwesomeIcon icon={faLinkedinIn} size="lg" />
-// 				</a>
-// 			</div>
-// 			<div className="social">
-// 				<a
-// 					href="https://github.com/RichardRiv"
-// 					target="_blank"
-// 					rel="noreferrer noopener"
-// 				>
-// 					<FontAwesomeIcon icon={faGithub} size="lg" />{' '}
-// 				</a>
-// 			</div>
-// 			<div className="social">
-// 				<a href="mailto:rrivera1420@gmail.com">
-// 					<FontAwesomeIcon icon={faEnvelope} size="lg" />
-// 				</a>
-// 			</div>
-// 		</div>
-// 		<div className="inner-rectangle inner-center">
-// 			{/* == Name & About == */}
-// 			<p className="name">Richard Rivera</p>
-// 			<hr />
-// 			<p className="about-title">About Me</p>
-// 			<p className="about">
-// 				Graduate student pursuing a Masters in Information Systems looking
-// 				to learn and grow my experience. A passion for solving problems and
-// 				a love for programming leads me to constantly learn and work with
-// 				both front-end and back-end languages.
-// 			</p>
-// 			{/* == Education == */}
-// 			<p className="education-title">Education</p>
-// 			<p className="baruch">
-// 				Baruch College Zicklin School of Business <br />
-// 				<span>Expected: June 2024</span>
-// 			</p>
-// 			<p className="nycct">
-// 				New York City College of Technology
-// 				<br />
-// 				<span>Received: June 2022</span>
-// 			</p>
-// 			{/* == Skills == */}
-// 			<p className="skills-title">Skills</p>
-// 			<div className="skills-align">
-// 				<p className="skills">🟣 Java</p>
-// 				<p className="skills">🟣 React.js</p>
-// 				<p className="skills">🟣 SQL</p>
-// 			</div>
-// 			{/* == Roles == */}
-// 			<p className="roles-title">Roles / Experience</p>
-// 			<div className="roles-align">
-// 				<p className="role">🔵 Full Stack Developer</p>
-// 				<p className="role">🔵 Game Developer</p>
-// 				<p className="role">🔵 WordPress Developer</p>
-// 				<p className="role">🔵 CST Tutor</p>
-// 			</div>
-// 		</div>
-// 	</div>
-// </div>
