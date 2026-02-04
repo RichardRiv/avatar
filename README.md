@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# Avatar Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi there! 😁
 
-## Available Scripts
+This is my personal portfolio showcasing me- inspired by the software that I use often! There is still room for improvement so bear with me but feel free to explore for now! =)
 
-In the project directory, you can run:
+## 🌟 Features
 
-### `npm start`
+- **Real-time Spotify Integration**: Displays currently playing music using Spotify Web API with OAuth authentication
+- **Discord/Steam-style UI**: Steam cards with 3D tilt effects and familiar Discord aesthetics
+- **Responsive Design**: For screens bigger and smaller than 1000px
+- **Modern Tech Stack**: Built with React frontend and .NET Web API backend
+- **More Coming In The Future!**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**: Deployed on Vercel
+- **Backend**: Deployed on Azure App Service
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
 
-### `npm run build`
+- React
+- HTML5 & CSS3 (Flexbox layouts)
+- Responsive design patterns
+- 3D CSS transforms for interactive elements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Backend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- .NET Web API
+- Spotify Web API integration
+- OAuth 2.0 authentication
+- Azure App Service hosting
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Database
 
-### `npm run eject`
+- MSSQL (WIP)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📁 Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+avatar/
+├── frontend/          # React application
+│   ├── src/
+│   └── public/
+└── backend/           # .NET Web API
+    ├── Controllers/
+    └── Services/
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔧 Setup & Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
 
-## Learn More
+- Node.js (v16 or higher)
+- .NET SDK
+- Spotify Developer Account
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Frontend Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+cd frontend
+npm install
+npm start
+```
 
-### Code Splitting
+### Backend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+cd backend
+dotnet restore
+dotnet run
+```
 
-### Analyzing the Bundle Size
+### Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Create a `.env` file in the frontend directory:
 
-### Making a Progressive Web App
+```
+REACT_APP_API_URL=YOUR_BACKEND_URL
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Configure your backend with Spotify API credentials in `appsettings.json`:
 
-### Advanced Configuration
+```json
+{
+	"Spotify": {
+		"ClientId": "YOUR_SPOTIFY_CLIENT_ID",
+		"ClientSecret": "YOUR_SPOTIFY_CLIENT_SECRET",
+		"RedirectUri": "YOUR_REDIRECT_URI",
+		"RefreshToken": "YOUR_SPOTIFY_REFRESH_TOKEN"
+	}
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🔄 Version Control
 
-### Deployment
+This project uses Git for version control with workflows across multiple development environments.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 License
 
-### `npm run build` fails to minify
+This project is open source and available under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👨‍💻 Author
+
+**Richard**
+
+- [GitHub](https://github.com/richardRiv/)
+- [LinkedIn](https://www.linkedin.com/in/richard-rivera-/)
+
+## 🙏 Acknowledgments
+
+- Spotify Web API for music integration
+- Discord & Steam for UI/UX inspiration
+- Vercel and Azure for hosting solutions
