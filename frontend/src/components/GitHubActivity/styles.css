@@ -1,0 +1,66 @@
+/* .github-item {
+	background: #2c2d32;
+	height: 150px;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.github-span-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.github-span-group {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+
+.github-three-dots {
+	font-size: 12px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.coding-logo {
+	width: 10px;
+	height: 10px;
+}
+
+.github-container {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+	height: 100px;
+	align-items: center;
+}
+
+.github-art {
+	height: 100px;
+	width: 100px;
+	border-radius: 10px;
+}
+
+.github-info {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.github-author {
+	font-size: small;
+	color: #d7d5da;
+}
+
+.progress-bar-container {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	width: 100%;
+	margin-top: 8px;
+}
+
+.progress-time {
+	font-size: small;
+} */

@@ -1,0 +1,15 @@
+.activity-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.activity-container:empty {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	.activity-h5 {
+		display: none;
+	}
+}
