@@ -104,11 +104,15 @@ const Home = () => {
 									<p className="education">
 										Baruch College Zicklin School of Business
 									</p>
-									<span className="education-span">Received: June 2024</span>
+									<span className="education-span">
+										Received MSIS: June 2024
+									</span>
 									<p className="education">
 										New York City College of Technology (City Tech)
 									</p>
-									<span className="education-span">Received: June 2022</span>
+									<span className="education-span">
+										Received B.Tech: June 2022
+									</span>
 								</div>
 
 								{/* EXPERIENCE */}

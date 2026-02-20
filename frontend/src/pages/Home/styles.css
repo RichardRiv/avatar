@@ -5,7 +5,16 @@
 }
 
 body {
-	background: pink;
+	background: #0a0a0a;
+	/* background: #18191b; */
+	/* background-image: url('/src/assets/img/nyc.jpg'); */
+	/* background-image: url('/src/assets/img/city.jpg'); */
+	/* background-image: url('/src/assets/img/forest.jpg'); */
+	/* background-image: url('/src/assets/gifs/plane.gif'); */
+	/* background-image: url('/src/assets/gifs/waves.gif'); */
+	/* background-position: center;
+	backdrop-filter: blur(5px);
+	background-size: cover; */
 	color: #eaebeb;
 }
 
@@ -29,14 +38,19 @@ a {
 
 .outer-box {
 	width: 960px;
-	/* height: 810px; */
 	min-height: 810px;
-	/* min-height: calc(100vh - 4rem); */
 	background: #1a1a1e;
 	border-radius: 15px;
 	display: flex;
 	flex-direction: row;
 	gap: 25px;
+	/* box-shadow: 0px 0px 10px 5px #4fd7fb; */
+	/* box-shadow:
+		-4px 0px 10px 5px #ff6ef7,
+		4px 0px 10px 5px #4fd7fb; */
+	box-shadow:
+		-5px -5px 20px 2px #ff6ef7,
+		5px 5px 20px 2px #4fd7fb;
 }
 
 .col-1 {
@@ -188,9 +202,20 @@ a {
 }
 
 .banner {
-	background: #76b1f6;
+	/* background: #76b1f6; */
+	/* background-image: url('/src/assets/img/nyc.jpg'); */
+	/* background-image: url('/src/assets/img/boats.jpg'); */
+	/* background-image: url('/src/assets/img/bus.jpg'); */
+	/* background-image: url('/src/assets/img/city.jpg'); */
+	/* background-image: url('/src/assets/img/forest.jpg'); */
+	/* background-image: url('/src/assets/gifs/plane.gif'); */
+	/* background-image: url('/src/assets/gifs/clouds.gif'); */
+	background-image: url('/src/assets/gifs/waterfall.gif');
+	/* background-image: url('/src/assets/gifs/waves.gif'); */
 	height: 160px;
 	border-radius: 15px 15px 0px 0px;
+	background-size: cover;
+	/* background-position: center; */
 }
 
 .profile-pic {
@@ -307,6 +332,7 @@ xlg: 1200px;
 		/* background: purple; */
 		min-height: 100vh;
 		border-radius: 0px;
+		box-shadow: none;
 	}
 
 	.col-1 {
