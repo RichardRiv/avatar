@@ -13,7 +13,7 @@ builder.Services.AddSingleton<SpotifyService>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReact", policy => 
-        policy.WithOrigins("http://localhost:3000", "https://avatar-nine-steel.vercel.app")
+        policy.WithOrigins("http://localhost:3000", "https://avatar-nine-steel.vercel.app", "https://www.devr.app/")
             .AllowAnyMethod()
             .AllowAnyHeader()
             .AllowCredentials());
