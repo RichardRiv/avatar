@@ -1,5 +1,5 @@
 import './styles.css';
-import SpotifyActivity from '../../components/SpotifyActivity';
+import Activity from '../../components/Activity';
 // import GitHubActivity from '../../components/GitHubActivity';
 
 const ActivityTab = () => {
@@ -7,7 +7,7 @@ const ActivityTab = () => {
 		<>
 			<h5 className="activity-h5">Current Activity</h5>
 			<div className="activity-container">
-				<SpotifyActivity />
+				<Activity />
 				{/* <GitHubActivity /> Postponed implementation because this is more recent activity than "current activity" */}
 			</div>
 		</>
