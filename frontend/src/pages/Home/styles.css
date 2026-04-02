@@ -119,86 +119,12 @@ a {
 	border-radius: 15px;
 }
 
-.row-2-items {
-	display: flex;
-	/* height: 100px; */
-	justify-content: space-evenly;
-	margin-top: 20px;
-	flex-wrap: wrap;
-}
-
-.logo {
-	width: 80px;
-	height: 80px;
-}
-
-.sql-logo {
-	width: 100px;
-	height: 100px;
-}
-
-.sql-logo path {
-	fill: white;
-}
-
 .row-3 {
 	background: #2c2d32;
 	flex: 1;
 	/* padding: 10px; */
 	padding: 10px 10px 0 10px;
 	border-radius: 15px;
-}
-
-.row-3-items {
-	margin-top: 10px;
-	display: flex;
-	gap: 20px;
-	flex-wrap: wrap;
-	/* height: 320px; */
-	/* padding: 15px; */
-	padding: 15px 15px 30px 15px;
-	justify-content: space-evenly;
-	overflow-x: hidden;
-}
-
-.row-3-items::-webkit-scrollbar {
-	width: 0px;
-}
-
-.row-3-items::-webkit-scrollbar-thumb {
-	background: transparent;
-}
-
-.row-3-items::-webkit-scrollbar {
-	width: 4px;
-}
-
-.row-3-items::-webkit-scrollbar-thumb {
-	background: #5f606a;
-	-webkit-border-radius: 10px;
-}
-
-.expand {
-	overflow-y: scroll;
-	height: 400px !important;
-}
-
-.row-3-item {
-	height: 50px;
-}
-
-.row-3-items-see-more {
-	border: none;
-	outline: none;
-	background: transparent;
-	cursor: pointer;
-	color: rgb(175, 175, 175);
-	/* margin-top: 30px; */
-}
-
-.row-3-items-see-more:hover {
-	color: white;
-	text-decoration: underline;
 }
 
 .banner {
@@ -385,10 +311,5 @@ xlg: 1200px;
 
 	.row-2 {
 		min-height: 200px;
-	}
-
-	.row-3-items {
-		justify-content: flex-start;
-		gap: 15px;
 	}
 }
